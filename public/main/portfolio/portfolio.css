@@ -1,55 +1,91 @@
 .about-me:hover {
-    background-image: url(/img/about_me.png);
+    background-image: url(/img/about_me-min.png);
 }
 
 .budgety:hover {
-    background-image: url(/img/budgety.png);
+    background-image: url(/img/budgety-min.png);
 }
 
 .pig-dice:hover {
-    background-image: url(/img/pig_dice.png);
+    background-image: url(/img/pig_dice-min.png);
 }
 
 .forkify:hover {
-    background-image: url(/img/forkify.png);
+    background-image: url(/img/forkify-min.png);
 }
 
 .simple-node-blog:hover {
-    background-image: url(/img/code.jpg);
+    background-image: url(/img/code-min.jpg);
 }
 
 .boilerplate-node-authorization:hover {
-    background-image: url(/img/code.jpg);
+    background-image: url(/img/code-min.jpg);
 }
 
 .osu-bootcamp-unit-1-mini-project:hover {
-    background-image: url(/img/coming_soon_port.png);
+    background-image: url(/img/coming_soon_port-min.png);
 }
 
 .html-git-css-homework-01:hover {
-    background-image: url(/img/hw1.png);
+    background-image: url(/img/hw1-min.png);
 }
 
 .ethan-harsh-portfolio-homework-2:hover {
-    background-image: url(/img/hw2.png);
+    background-image: url(/img/hw2-min.png);
 }
 
 .javascript-password-generator:hover {
-    background-image: url(/img/03-javascript-homework-demo.png);
+    background-image: url(/img/03-javascript-homework-demo-min.png);
 }
 
-.web-apis-code-quiz {
-    background-image: url(/img/javascript_quiz1.png);
+.web-apis-code-quiz:hover {
+    background-image: url(/img/javascript_quiz1-min.png);
 }
 
 .third-party-apis-work-day-scheduler:hover {
-    background-image: url(/img/scheduler.png);
+    background-image: url(/img/scheduler-min.png);
 }
 
 .server-side-apis-weather-dashboard {
-    background-image: url(/img/weather.png);    
+    background-image: url(/img/weather-min.png);    
 }
 
-.a-drink-around-here {
-    background-image: url(/img/project1.png);     
+.a-drink-around-here:hover {
+    background-image: url(/img/project1-min.png);     
+}
+
+.hw-08-project-1-professional-materials:hover {
+    background-image: url(/img/portfoliov1_2-min.png);     
+}
+
+.hw-09-node.js-homework-professional-readme-generator:hover {
+    background-image: url(/img/readme-gen-min.png);     
+}
+
+.hw-10-object-oriented-programming-team-profile-generator:hover {
+    background-image: url(/img/team-gen-min.png);     
+}
+
+.hw-11-express.js-note-taker:hover {
+    background-image: url(/img/notetaker-min.png);     
+}
+
+.mini-project-hot-restaurant:hover {
+    background-image: url(/img/hot-restaurant-min.png);     
+}
+
+.unit-12-mysql-homework-employee-tracker:hover {
+    background-image: url(/img/employee-tracker-min.png);     
+}
+
+.hw-13-object-relational-mapping-orm-r-commerce-back-end:hover {
+    background-image: url(/img/code-min.jpg);     
+}
+
+.hw-14-model-view-controller-mvc-tech-blog {
+    background-image: url(/img/demo-blog-min.png);     
+}
+
+.ai-pointment {
+    background-image: url(/img/chatbot-min.png);     
 }

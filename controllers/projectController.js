@@ -4,99 +4,93 @@ const catchAsync = require('./../utils/catchAsync');
 
 
 exports.getAllProjects = catchAsync(async (req, res, next) => {
-    //EXECUTE QUERY
-    const features = new APIFeatures(Project.find(), req.query)
-    .filter()
-    .sort()
-    .limitFields()
-    .paginate();
-    const projects = await features.query;
-    
+    const projects = await Project.find().sort([['createDate', -1]]).exec();
+
     //SEND RESPONSE
     res.status(200).json({
-        status:'success',
+        status: 'success',
         results: projects.length, //tours is an array
         data: {
-             projects
+            projects
         }
-    });   
+    });
 });
 
-exports.getProject= catchAsync(async (req, res, next) => {   
+exports.getProject = catchAsync(async (req, res, next) => {
     const project = await Project.findById(req.params.id);
 
     if (!project) {
         return next(new AppError('No tour found with that ID', 404));
     }
 
-   res.status(200).json({
-     status:'success',
+    res.status(200).json({
+        status: 'success',
         data: {
-         project
+            project
         }
     });
 });
 
-exports.getJavascriptProjects = catchAsync(async (req, res,next) => {
-    const projects = await Project.find({type: 'javascript'}).exec();
+exports.getJavascriptProjects = catchAsync(async (req, res, next) => {
+    const projects = await Project.find({ type: 'javascript' }).sort([['createDate', -1]]).exec();
     if (!projects) {
         return next(new AppError('No javascript projects found', 404));
     }
 
     res.status(200).json({
-        status:'success',
+        status: 'success',
         results: projects.length,
-           data: {
+        data: {
             projects
-           }
-       });
+        }
+    });
 
 })
 
-exports.getNodeProjects = catchAsync(async (req, res,next) => {
-    const projects = await Project.find({type: 'Node.js'}).exec();
+exports.getNodeProjects = catchAsync(async (req, res, next) => {
+    const projects = await Project.find({ type: 'Node.js' }).sort([['createDate', -1]]).exec();
     if (!projects) {
         return next(new AppError('No Node.JS Projects Found', 404));
     }
 
     res.status(200).json({
-        status:'success',
+        status: 'success',
         results: projects.length,
-           data: {
+        data: {
             projects
-           }
-       });
+        }
+    });
 
 })
 
-exports.getHTMLProjects = catchAsync(async (req, res,next) => {
-    const projects = await Project.find({type: 'HTML/CSS'}).exec();
+exports.getHTMLProjects = catchAsync(async (req, res, next) => {
+    const projects = await Project.find({ type: 'HTML/CSS' }).sort([['createDate', -1]]).exec();
     if (!projects) {
         return next(new AppError('No HTML/CSS Projects Found', 404));
     }
 
     res.status(200).json({
-        status:'success',
+        status: 'success',
         results: projects.length,
-           data: {
+        data: {
             projects
-           }
-       });
+        }
+    });
 
 })
 
-exports.getFeaturedProjects = catchAsync(async (req, res,next) => {
-    const projects = await Project.find({featured: '1'}).exec();
+exports.getFeaturedProjects = catchAsync(async (req, res, next) => {
+    const projects = await Project.find({ featured: '1' }).sort([['createDate', -1]]).exec();
     if (!projects) {
         return next(new AppError('No HTML/CSS Projects Found', 404));
     }
 
     res.status(200).json({
-        status:'success',
+        status: 'success',
         results: projects.length,
-           data: {
+        data: {
             projects
-           }
-       });
+        }
+    });
 
 })
