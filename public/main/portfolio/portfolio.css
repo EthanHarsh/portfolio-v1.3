@@ -1,0 +1,55 @@
+.about-me:hover {
+    background-image: url(/img/about_me.png);
+}
+
+.budgety:hover {
+    background-image: url(/img/budgety.png);
+}
+
+.pig-dice:hover {
+    background-image: url(/img/pig_dice.png);
+}
+
+.forkify:hover {
+    background-image: url(/img/forkify.png);
+}
+
+.simple-node-blog:hover {
+    background-image: url(/img/code.jpg);
+}
+
+.boilerplate-node-authorization:hover {
+    background-image: url(/img/code.jpg);
+}
+
+.osu-bootcamp-unit-1-mini-project:hover {
+    background-image: url(/img/coming_soon_port.png);
+}
+
+.html-git-css-homework-01:hover {
+    background-image: url(/img/hw1.png);
+}
+
+.ethan-harsh-portfolio-homework-2:hover {
+    background-image: url(/img/hw2.png);
+}
+
+.javascript-password-generator:hover {
+    background-image: url(/img/03-javascript-homework-demo.png);
+}
+
+.web-apis-code-quiz {
+    background-image: url(/img/javascript_quiz1.png);
+}
+
+.third-party-apis-work-day-scheduler:hover {
+    background-image: url(/img/scheduler.png);
+}
+
+.server-side-apis-weather-dashboard {
+    background-image: url(/img/weather.png);    
+}
+
+.a-drink-around-here {
+    background-image: url(/img/project1.png);     
+}

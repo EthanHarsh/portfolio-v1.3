@@ -1,0 +1,261 @@
+/* Card Originals */
+.card {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    height: 300px;
+    width: 300px;
+    background-color: var(--background-med);
+    padding: 0;
+    margin: 1.5rem;
+    box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+    border-radius: 4px;
+    border-bottom: 1px solid var(--border-med);
+    overflow: hidden;
+}
+  
+.card img {
+    display: relative;
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+/* CARD COMPONENETS */
+.display-box {
+  display: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.info-box {
+  display: relative;
+  background: var(--background-light);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border: 1px solid var(--border-light);
+  width: 275px;
+  height: 117px;
+  overflow: hidden;
+}
+
+.info-box h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+}
+
+.info-box p {
+  padding: 0.25rem;
+}
+
+.repo {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+/* CARD HOVER */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+  border: none;
+  justify-content: space-evenly;
+}
+
+.card:hover .display-box {
+  display: none;
+
+}
+
+.card:hover .info-box {
+  height: auto;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+  backdrop-filter: blur( 10.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.card:hover .info-box p {
+  padding: 0.25rem;
+  color: black;
+}
+
+.card:hover .button {
+  background: hsla(199, 92%, 56%, 0.75);
+  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+  backdrop-filter: blur( 10.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.card:hover .button:hover {
+  background: var(--btn-background-hover-primary);
+  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+  backdrop-filter: blur( 10.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.card:hover .button:focus {
+  background: var(--btn-background-hover-primary);
+  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+  backdrop-filter: blur( 10.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.card:hover .repo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD FEATURED */ 
+.featured {
+  height: 300px;
+  width: 600px;
+  justify-content: space-between;
+  transition: all 0.5s;
+}
+
+.featured p {
+  font-size: 1.25rem !important;
+}
+
+.featured .display-box {
+  display: none;
+}
+
+.featured .info-box {
+  height: 66.66%;
+  width: 66.66%;
+  margin-top: 2.5rem;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+  backdrop-filter: blur( 10.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.featured .button {
+  margin-bottom: 2.5rem;
+  background: hsla(199, 92%, 56%, 0.75);
+  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+  backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.featured .button:hover {
+  margin-bottom: 2.5rem;
+  background: var(--btn-background-hover-primary);
+  box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+  backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.featured .info-box p {
+  color: black;
+  font-size: 1rem;
+}
+
+.featured .info-box h3 {
+  color: black;
+  font-size: 2.5rem;
+}
+
+.featured:hover .info-box p {
+  display: none;
+}
+
+.featured:hover .info-box h3 {
+  font-size: 1.5rem;
+}
+
+.featured:hover .info-box  {
+  height: auto;
+}
+
+
+@media (max-width: 780px) { 
+  .featured {
+    justify-content: space-between;
+    transition: all 0.5s;
+  }
+  
+  .featured p {
+    font-size: 1rem !important;
+  }
+  
+  .featured .display-box {
+    display: none;
+  }
+  
+  .featured .info-box {
+    height: 66.66%;
+    width: 66.66%;
+    margin-top: 2.5rem;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+    backdrop-filter: blur( 10.0px );
+      -webkit-backdrop-filter: blur( 10.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  
+  .featured .button {
+    margin-bottom: 2.5rem;
+    background: hsla(199, 92%, 56%, 0.75);
+    box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+    backdrop-filter: blur( 5.0px );
+      -webkit-backdrop-filter: blur( 5.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  
+  .featured .button:hover {
+    margin-bottom: 2.5rem;
+    background: var(--btn-background-hover-primary);
+    box-shadow: 20px 20px 25px rgba( 0, 0, 0, 0.15 );
+    backdrop-filter: blur( 5.0px );
+      -webkit-backdrop-filter: blur( 5.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  
+  .featured .info-box p {
+    color: black;
+    font-size: 1rem;
+  }
+  
+  .featured .info-box h3 {
+    color: black;
+    font-size: 2rem;
+  }
+  
+  .featured:hover .info-box p {
+    display: none;
+  }
+  
+  .featured:hover .info-box h3 {
+    font-size: 1rem;
+  }
+  
+  .featured:hover .info-box  {
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
